@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="jquery2.js"></script>
+
+    <title>HMG : NewsLetter</title>
+    <style>
+        form {
+            text-align: center;
+        }
+
+        input {
+            border-radius: 3px;
+        }
+
+        .envoi {
+            background-color: #548585;
+            color: white;
+            border: none;
+            font-size: 150%
+        }
+
+        .envoi:hover {
+            background-color: rgb(140, 198, 221);
+            cursor: pointer;
+
+        }
+        .recherche {
+    width: 50%;
+    border: none;
+    height: 3vh;
+    border-radius : 0;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class=haut>
+            <header>
+                <a class="logo" href="index.html"><img src="img/logo/hmg120.png" alt=" logo"></a>
+                <div class="date">
+                    <script language="JavaScript">
+
+
+                        document.write()
+                        var mydate = new Date()
+                        var year = mydate.getYear()
+                        if (year < 2000)
+                            year += (year < 1900) ? 1900 : 0
+                        var day = mydate.getDay()
+                        var month = mydate.getMonth()
+                        var daym = mydate.getDate()
+                        if (daym < 10)
+                            daym = "0" + daym
+                        var dayarray = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi")
+                        var montharray = new Array(" janvier ", " fevrier ", " mars ", "avril ", "mai ", "juin", "juillet ", "aout ", "septembre ", " octobre ", " novembre ", " décembre ")
+                        document.write("   " + dayarray[day] + " " + daym + " " + montharray[month] + year + " ")
+                        document.write("</b></i></font>")
+                    </script>
+
+                </div>
+                <div class="burger">
+                    <img src="img/logo/burger.png" alt="">
+                </div>
+        
+        </div>
+
+        <div class="entete">
+            <ul>
+                <li><a href="index.html" title="Page d'accueil">Accueil</a></li>
+                <li><a href="pratique.html">Pratique</a></li>
+                <li><a href="logitheque.html">Logithèque</a></li>
+                <li><a href="trucs.html">Trucs & astuces</a></li>
+                <li><a href="fonds.html">Fonds d'écran</a></li>
+                <li><a href="recrutement.html">Recrutement</a></li>
+                <li><a href="contact.html" title="Contactez nous !">Contact</a></li>
+
+        </div>
+        <div class="barre">
+
+
+
+            <form>
+                <input class="recherche" type="search" id="site-search" name="recherche"
+                    placeholder="Rechercher sur le site" aria-label="Search through site content"><button
+                    class="bcherche">Recherche</button></form>
+        </div>
+
+        </header>
+
+
+
+
+
+        <a target="_blank" href="https://www.apple.com/fr/shop/buy-mac/macbook-air">
+            <div class="pub"><img class="imgpub" src="img/pubapple.jpg"></div>
+        </a>
+
+        <main>
+
+            <div class="col1">
+                <div id='sectionAimprimer'>
+
+                    <h1>Abonnement à la newsletter de Happy Media Geek</h1>
+                    <img src="img/logo/contacts.jpg" alt="contact">
+
+                    <p>La lettre d'information électronique de Happy Media Geek c'est gratuit, chaque vendredi, dans
+                        votre boîte mail !</p>
+
+                    <p>Restez toujours au courant des dernières actualités et ne ratez rien de tout ce qui se passe
+                        grâce à elle !</p>
+
+                    <p>L'inscription est gratuite et ne prend pas plus de 15 secondes. Vous pouvez arrêter votre
+                        abonnement à tout moment en cliquant sur le lien en bas des e-mail que vous receverez.</p>
+
+                    <div class="newsletter">
+                        <form>
+                            <p>Votre Prénom : <input type="text" name="prenom" ></p>
+                            <p>Votre Nom : <input type="text" name="nom" ></p>
+                            <p>Votre adresse mail : <input type="text" name="email" placeholder="exemple@gmail.com"></p>
+
+
+
+
+                            <input type="checkbox" name="scales">
+                            <label for="scales">Je souhaite recevoir la newsletter partenaire (bon plans, préventes...)
+                            </label>
+                            <br><br>
+                            <input class="envoi" type="submit" value="S'abonner">
+                    </div>
+
+                    <br>
+                    <div class="imprim"> <button class="impr" onClick="imprimer('sectionAimprimer')"
+                            style="background: url(img/logo/imprimante.png)"></button> </div>
+                    <br>
+
+
+                </div>
+            </div>
+
+
+            <div class="col2">
+                <div class="article">
+                    <h3>Nos éditeurs de texte !</h3>
+                    <a href="editeurs.html" title="editeurs"><img src="img/logo/visual.png" alt="visual"></a>
+                    <p>Codeur en herbe c'est par ici !</p>
+                    <br>
+                    <a href="editeurs.html">À découvrir ici</a></p>
+                </div>
+                <hr>
+                <div class="article">
+                    <h3>Jeux vidéo</h3>
+                    <a href="jeu.html" title=""><img src="img/logo/jeuxvideo.png" alt="jeu video"></a>
+                    <p>Nos articles jeux vidéo !</p>
+                    <br>
+                    <a href="jeu.html">À découvrir ici</a></p>
+                </div>
+                <hr>
+                <div class="article">
+                    <h3>Bureautique</h3>
+                    <a href="bureautique.html" title=""><img src="img/logo/word.png" alt="word"></a>
+                    <p>Notre sélection de logiciel bureautique</p>
+                    <br>
+                    <a href="bureautique.html">À découvrir ici</a></p>
+                </div>
+            </div>
+        </main> 
+        
+        <a target="_blank" href="https://www.ifocop.fr/">
+            <div class="pub"><img class="imgpub" src="img/pub.jpg"></div>
+        </a>
+<!-- Footer-->
+        <footer>
+
+            <div class="block1">
+                <div class="logo"><a href="https://www.facebook.com/" title="facebook" target="_blank"><img
+                            src="img/logo/fb.png" alt="facebook"></a></div>
+                <div class="logo"><a href="https://twitter.com/" title="twitter" target="_blank"><img
+                            src="img/logo/twitter.png" alt="twitter"></a></div>
+            </div>
+            <div class="block2">
+                <div class="plan_site">
+                    <ul>
+
+                        <li><a href="pratique.html">Pratique</a></li>
+                        <li><a href="logitheque.html">Logithèque</a></li>
+                        <li><a href="trucs.html">Trucs et astuces</a></li>
+                        <li><a href="fonds.html">Fonds d'écran</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="plan_site2">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="recrutement.html">Offres d'emploi</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="block3">
+                <div class="plan_site3">
+                    <ul>
+                        <li><a href="mentions.html">Mentions Légales</a></li>
+                        <li><a href="confidentialite.html">Respect Vie privée</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+    $(".burger").click(function(){
+      $(".entete").stop().slideToggle("slow");;
+    }); 
+    $(window).resize(function(){
+        if ($(window).width() > 727) {
+          $(".burger").find("input").prop("checked", false);
+          $(".entete").slideDown("swing");  
+        }
+    })
+});
+
+
+</script>
+
+</body>
+
+</html>

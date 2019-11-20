@@ -1,0 +1,646 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(190, 190, 190, 0.137);
+    overflow-x : hidden
+}
+main{
+    min-height: calc(100vh - 240px);
+}
+h1 {
+    text-align : center;
+    margin-top: 0;
+    padding-top: 20px;
+    width : 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.alertverte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(113, 238, 113);
+    border : 2px solid green;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.alertverte p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.alertrouge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(233, 80, 60);
+    border : 2px solid rgb(194, 5, 5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.alertrouge p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.container {
+    width: 1080px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    padding-bottom: 20px;
+}
+.burger {
+    display : none;
+    color: white;
+}
+/* HEADER */
+
+.hcontainer {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+nav {
+    height: 40px;
+    background: rgb(24, 182, 245)
+}
+nav ul {
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+    line-height: 40px;
+    font-weight: bold;
+    }
+nav li {
+    -webkit-transition: all .3s ease; /* Safari et Chrome */
+    -moz-transition: all .3s ease; /* Firefox */
+    -ms-transition: all .3s ease; /* Internet Explorer 9 */
+    -o-transition: all .3s ease; /* Opera */
+    transition: all .3s ease;
+}
+nav li:hover {
+    -webkit-transform:scale(1.1); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.1); /* Internet Explorer 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);}
+nav ul li::first-letter{
+    color: rgb(255, 115, 0);
+}
+
+/* FIN HEADER */
+/* IMAGE */
+.articleprincipale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.articleprincipale img {
+    max-width: 100%;
+}
+.textcover {
+    position: absolute;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+}
+.textcover h1 {
+    font-size: 250%;
+    color: rgb(65, 65, 65);
+    text-shadow: 1px 1px 1px black;
+}
+.textcover a {
+    background: rgb(237, 150, 100);
+    font-size: 130%;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.textcover a:hover {
+    background: rgb(61, 174, 194);
+    -webkit-box-shadow: 2px 2px 6px rgb(61, 174, 194);
+    -moz-box-shadow: 2px 2px 6px rgb(61, 174, 194);
+    box-shadow: 2px 2px 6px rgb(61, 174, 194);
+}
+/* FIN IMAGE */
+/* MAIN */
+.titrecentre {
+    margin-top: 0;
+    padding-top: 30px; 
+    text-align: center;
+}
+
+.articlecentrale {
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding : 20px 0px;
+     
+}
+.textpn {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    color: rgb(73, 73, 73); 
+}
+.pourquoinous p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.articlerond {
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    padding: 15px;
+    text-align: center;
+}
+.cercle img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.cercle {
+    width: 240px;
+    max-height: 240px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cercleun {
+    background-position: center center;
+}
+.cercledeux {
+    background-position: center center;
+}
+.cercletrois {
+    background-position: center center;
+}
+.textcercle {
+    margin-top: 10px;
+}
+.pourquoinous {
+    min-height: 300px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.pourquoinous h1 {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+
+.articlebas {
+    width: 95%;
+    min-height: 450px;
+    background: url('../../img/fondavis.jpg') center center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.avisun {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.561);
+    font-size: 150%;
+    position: relative;
+    padding: 10px;
+    top: 20px;
+    left: 10px;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    z-index: 500;
+
+}
+.avisdeux {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.561);
+    font-size: 150%;
+    position: absolute;
+    padding: 10px;
+    right: 10px;
+    bottom: 20px;
+    margin-top: 20px;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+
+}
+.signature {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.articlefin {
+    min-height: 300px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* FIN MAIN */
+/* FLECHE */
+.fleche {
+    cursor: pointer;
+}
+.fleche i {
+    text-decoration: none;
+    color: white;
+}
+.fleche {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    background: rgb(1, 153, 255);
+    font-size: 200%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    border-radius: 5px;
+    opacity: 0.2;
+    transition: 0.3s;
+}
+.fleche:hover {
+    opacity: 1;
+}
+.articlefin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.articlefin h2 {
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.solution {
+    width: 30%;
+    min-height: 200px;
+    text-align: center;
+}
+.solution a{
+    color: rgb(1, 153, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logosolution {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.logosolution img {
+    max-width: 100%;
+}
+/* FIN FLECHE */
+/* FOOTER */
+footer {
+    min-height: 200px;
+    background: rgba(119, 119, 119, 0.5);
+    padding-bottom: 15px;
+}
+.fcontainer {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.fcontainer i {
+    color: black;
+}
+.lock {
+    width: 100%;
+    text-align: center;
+}
+.block1 {
+    width: 30%;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.block1 p{
+    width: 100%;
+    margin: 0;
+}
+.paiement {
+    font-size: 200%;
+    text-align: center;
+}
+.block2 {
+    width: 30%;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.block2 {
+   text-align: center;
+   display : flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.block2 p {
+    width: 100%;
+    margin: 0;
+}
+.block2 a {
+    font-size: 250%;
+}
+.block2 i{
+    margin: 0px 10px;
+
+}
+.fa-facebook:hover {
+    color: #3b5998;
+    cursor: pointer;
+}
+.fa-twitter:hover {
+    color : #00acee;
+    cursor: pointer;
+}
+.fa-instagram:hover {
+    color : #ff1515;
+    cursor: pointer;
+}
+.block3 {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+}
+.block3 p {
+    width: 100%;
+    text-align: center;
+    
+}
+.block3 ul {
+    margin-top: 0px;
+    list-style: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block3 a {
+    color: black;
+    text-decoration: none;
+}
+.block3 a:hover {
+    color: white;
+}
+.copyright {
+    text-align: center;
+}
+.mentions {
+    text-align: center;
+}   
+.mentions a {
+    color: black;    
+}
+
+/* AGENCES */
+.agences h1 {
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+.agences h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
+.agences {
+    margin-bottom: 0px;
+    background: rgb(172, 172, 172);
+}
+.agence {
+    width: 80%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 300px;
+    border: 1px solid black;
+    background: url('../../img/main.jpg') center center;
+}
+.textagence {
+    width: 60%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.473);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 15px 0;
+}
+.textagence h2 {
+    margin: 0;
+}
+/* FIN AGENCES */
+
+/* COMPTE */
+.maincompte {
+    background : url('../../img/compte.jpg') center center
+}
+/* FIN COMPTE */
+
+/* VOYAGES */
+
+.mainvoyages h1{
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.affichevoyages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.affichevoyages img {
+    width: 100%;
+}
+.presentationvoyages h3{
+    margin: 0;
+    color: black;
+    font-style: italic;
+}
+.presentationvoyages {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding :30px 0 
+}
+.vignette {
+    width: 42%;
+    border: 1px solid rgb(172, 172, 172);
+    margin-bottom: 20px; 
+    
+}
+.vignette img {
+    width: 1920px;
+    height: 1080px;
+    width: 100%;
+    max-height: 300px;
+}
+
+.showroom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+.ensavoirplus {
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 0;
+    width: 150px;
+    height: 50px;
+    font-size: 100%;
+    font-style: italic;
+    float: bottom;
+    float : right;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    transition : 0.1s
+}
+.ensavoirplus:hover {
+    background: rgb(1, 153, 255);
+
+}
+.hautvoyage {
+    display: flex;
+    flex-wrap: wrap;
+    padding :  0px 7.5px;
+    justify-content: space-around;
+}
+.descriptif {
+    text-align: center;
+}
+
+/* FIN VOYAGES */
+
+/* FICHE */
+.mainfiche{
+    background : url('../../img/voyages.jpg') center center fixed;
+}
+.fiche {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    justify-content: space-around;
+}
+.fiche img {
+    width:55%;
+}
+.fiche h3 {
+    color: rgb(98, 98, 98);
+}
+.fiche .barre {
+    margin-top: 15px;
+    width: 66%;
+    height: 2px;
+    background: rgba(95, 95, 95, 0.500);
+    border-radius: 5px;
+}
+.fiche h4 {
+    width: 90%;
+    
+    text-align: center;
+}
+.fiche p {
+    width: 90%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.barredroite {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.barredroite h3 {
+    margin-bottom: 2px;
+}
+.boutton {
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.boutton a {
+    text-decoration: none;
+    color : white;
+    background: rgb(1, 153, 255);
+    padding: 16px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.boutton a:hover {
+    background: rgb(255, 115, 0);
+}
+/* MENTIONS */
+.mainmentions h1 {
+    margin-top: 0;
+    text-align: center;
+    padding-top: 15px;
+}
+.mainmentions p {
+    padding: 15px;
+}
+.mainmentions h2 {
+    padding: 15px;
+}
