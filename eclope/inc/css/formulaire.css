@@ -1,0 +1,141 @@
+
+form {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column; 
+        
+}
+label {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+textarea {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+
+}
+select {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+.envoi {
+    margin-top: 10px;
+    height: 60px;
+    cursor: pointer;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    transition: 0.3s;
+}
+.envoi:hover {
+    background: rgb(146, 146, 146);
+    color: black;
+}
+
+.inscription {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.textinscription {
+    width: 40%;
+}
+.forminscription {
+    width: 40%;
+}
+.forminscription label{
+    display: block;
+	width: 150px;
+	float: left;
+}
+.inscription h2 {
+    text-align: center;
+}
+
+
+.inscriptionpourquoi img {
+    width: 50px;
+    height: 50px;
+}
+.inscriptionpourquoi {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.coordonnees {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.coordonnees label{
+    display: block;
+	width: 100px;
+	float: left;
+}
+#modif {
+   width: 100px;
+   height: 50px;
+   cursor: pointer;
+   transition: 0.2s;
+   border-radius: 5px;
+}
+.modifcoordo {
+    width: 120px;
+    height: 50px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#modif:hover , .modifcoordo:hover {
+    opacity: 0.5;
+}
+.bouttonsprofil {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#formajout {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    margin : auto;
+}
+#formajout input {
+    height: 40px;
+    font-size: 100%;
+}
+#formajout select {
+    margin-bottom: 0;
+    margin-top: 10px;
+    height: 40px;
+    text-align: center;
+    font-size: 100%;
+    
+}
+#ajout {
+    width: 50px;
+}
