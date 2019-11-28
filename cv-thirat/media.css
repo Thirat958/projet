@@ -1,0 +1,95 @@
+@media (max-width: 1080px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .menuprincipal {
+        display: none;
+    }
+    .burger {
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+    .listburger {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background: black;
+        width: 100%;
+        text-align: center;
+    }
+    .listburger li {
+        margin: 10px;
+    }
+    .formations {
+        width: 90%;
+        min-height: 250px;
+    }
+    .chronodroite, .chronogauche {
+        display: none;
+    }
+    .textRight, .textLeft {
+        width: 90%;
+        border: none;
+        -webkit-box-shadow: 1px 1px 4px rgba(145,145,145,1);
+    -moz-box-shadow: 1px 1px 4px  rgba(145,145,145,1);
+    box-shadow: 1px 1px 4px  rgb(109, 109, 109);
+    margin-bottom: 10px;
+    }
+    .formations img {
+        opacity: 1;
+        position: inherit;
+    }
+    .formations {
+        flex-direction: column;
+        min-height: 500px;
+    }
+    .formations:hover img {
+        transition: 1s;
+        opacity : 1;
+    }
+    .textHidden {
+        width: 90%;
+        opacity: 1;
+        position: inherit;
+        
+    }
+    .fa-chevron-circle-down:hover {
+        color: white;
+        cursor: pointer;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        background : url("img/enteteresponsive.jpg") center;
+
+    }
+    .filtre {
+        min-height: 60vh;
+    }
+    .filtre h1 {
+        width: 80%;
+    }
+    .presentation {
+        width: 90%;
+    }
+    .coordo {
+        width: 90%;
+    }
+    .loisir {
+        width: 90%;
+    }
+    .your-class {
+        width: 90%;
+    }
+    .empty {
+        display: none;
+    }
+    
+
+}
+
+
